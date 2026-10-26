@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Antojitos Izcalli | Mexican restaurant in Tuscaloosa, AL</title>
+<meta name="description" content="Authentic Mexican food in a small brick building behind the Circle K on McFarland Boulevard, Tuscaloosa. Open since 2017.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brick:#8f2f1f;
+  --brick-dark:#5e1d12;
+  --cream:#f6ecd9;
+  --paper:#fffaf0;
+  --ink:#2a1a14;
+  --corn:#f0b429;
+  --chile:#2f5d3a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Source Sans 3",system-ui,sans-serif;font-size:19px;line-height:1.55;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,serif;line-height:1.05;margin:0}
+a{color:inherit}
+p{margin:0 0 1em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+
+.preview{background:#111;color:#fff;font-size:16px;font-weight:600;text-align:center;padding:10px 16px;line-height:1.35}
+
+/* hero */
+.hero{background:var(--brick);color:var(--cream);padding:48px 0 0}
+.hero .wrap{display:grid;gap:40px}
+.name{font-family:"Bricolage Grotesque",serif;font-weight:500;font-size:1.1rem;letter-spacing:.02em;color:var(--corn);margin-bottom:18px}
+.hero h1{font-weight:800;font-size:clamp(2.5rem,9vw,5.2rem);letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--corn)}
+.lede{font-size:1.2rem;max-width:34rem;margin-top:22px}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:1.1rem;padding:15px 24px;border-radius:4px;min-height:48px}
+.btn.main{background:var(--corn);color:var(--ink)}
+.btn.main:hover{background:#ffc94d}
+.btn.alt{border:2px solid var(--cream);color:var(--cream)}
+.btn.alt:hover{background:var(--cream);color:var(--brick-dark)}
+.find{background:var(--brick-dark);padding:26px 24px;align-self:end}
+.find p{margin:0}
+.find .k{font-size:1rem;color:var(--corn);font-weight:700;margin-bottom:6px}
+.find .big{font-family:"Bricolage Grotesque",serif;font-weight:800;font-size:1.9rem;line-height:1.1;margin-bottom:16px}
+.find .big+.k{margin-top:4px}
+.hero-foot{height:14px;background:repeating-linear-gradient(90deg,var(--corn) 0 28px,var(--chile) 28px 56px,var(--cream) 56px 84px);margin-top:48px}
+
+/* menu */
+.menu{padding:72px 0 40px}
+.menu-head{display:grid;gap:12px;margin-bottom:36px}
+.menu h2{font-weight:800;font-size:clamp(2rem,6vw,3.4rem);letter-spacing:-.01em}
+.menu-head p{max-width:34rem;font-size:1.15rem;margin:0}
+.dish{display:grid;gap:6px;padding:26px 0;border-top:2px solid var(--ink)}
+.dish h3{font-weight:800;font-size:clamp(1.6rem,5vw,2.4rem)}
+.dish p{margin:0;max-width:36rem}
+.dish .tag{font-family:"Bricolage Grotesque",serif;font-weight:800;font-size:1.5rem;color:var(--brick)}
+.dish.lead h3{font-size:clamp(2rem,7vw,3.6rem)}
+.special{margin-top:0;background:var(--cream);padding:26px 22px;border-top:2px solid var(--ink)}
+.special h3{font-size:1.6rem;margin-bottom:6px}
+.special p{margin:0}
+
+/* story */
+.story{background:var(--chile);color:#fff;padding:64px 0}
+.story .wrap{display:grid;gap:28px}
+.story h2{font-weight:800;font-size:clamp(1.9rem,5.5vw,3.2rem);max-width:20ch}
+.story h2 em{font-style:normal;color:var(--corn)}
+.story p{font-size:1.15rem;max-width:36rem}
+.story a{color:var(--corn);font-weight:700}
+
+/* ways */
+.ways{padding:72px 0}
+.ways .wrap{display:grid;gap:36px}
+.ways h2{font-weight:800;font-size:clamp(2rem,6vw,3.2rem)}
+.ways .sub{font-size:1.15rem;max-width:30rem}
+.ways ul{list-style:none;margin:0;padding:0}
+.ways li{padding:16px 0;border-top:1px solid #b9a98c}
+.ways li:last-child{border-bottom:1px solid #b9a98c}
+.ways strong{font-family:"Bricolage Grotesque",serif;font-size:1.3rem;display:block}
+
+/* visit */
+.visit{background:var(--cream);padding:72px 0}
+.visit .wrap{display:grid;gap:44px}
+.visit h2{font-weight:800;font-size:clamp(2rem,6vw,3.2rem);margin-bottom:22px}
+.hours{width:100%;border-collapse:collapse;font-size:1.25rem}
+.hours th,.hours td{text-align:left;padding:14px 0;border-top:2px solid var(--ink);font-weight:600}
+.hours td{text-align:right;font-family:"Bricolage Grotesque",serif;font-weight:800}
+.hours tr:last-child th,.hours tr:last-child td{border-bottom:2px solid var(--ink)}
+.addr{font-family:"Bricolage Grotesque",serif;font-weight:800;font-size:1.7rem;line-height:1.15;margin-bottom:14px}
+.visit .note{max-width:28rem}
+.facts{margin:24px 0 0;padding:0;list-style:none;font-size:1.1rem;font-weight:600}
+.facts li{padding:8px 0;border-top:1px solid #b9a98c}
+.visit a.btn{margin-top:20px;background:var(--brick);color:#fff}
+.visit a.btn:hover{background:var(--brick-dark)}
+
+footer{background:#1b100c;color:#f0e4cf;padding:36px 0;font-size:17px}
+footer .wrap{display:grid;gap:8px}
+footer strong{font-family:"Bricolage Grotesque",serif;font-size:1.3rem;color:#fff}
+footer a{color:var(--corn)}
+footer p{margin:0}
+
+a:focus-visible{outline:3px solid var(--corn);outline-offset:3px}
+
+@media(min-width:860px){
+  body{font-size:20px}
+  .wrap{padding:0 40px}
+  .hero{padding-top:84px}
+  .hero .wrap{grid-template-columns:1.5fr 1fr;gap:64px;align-items:end}
+  .find{padding:34px 32px}
+  .menu-head{grid-template-columns:1fr 1fr;align-items:end}
+  .dish{grid-template-columns:1fr 1.1fr;gap:40px;align-items:baseline}
+  .dish.lead{padding:44px 0}
+  .dish .tag{grid-column:1}
+  .story .wrap{grid-template-columns:1.2fr 1fr;align-items:center;gap:80px}
+  .story p:last-child{margin:0}
+  .ways .wrap{grid-template-columns:1fr 1fr;gap:80px}
+  .visit .wrap{grid-template-columns:1fr 1fr;gap:96px}
+  footer .wrap{grid-template-columns:1fr auto;align-items:end}
+}
+</style>
+</head>
+<body>
+
+<div class="preview">Concept preview made by Purcell Ventures for Antojitos Izcalli. Not the official site.</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="name">Antojitos Izcalli, Tuscaloosa</div>
+      <h1>Lengua tacos for <em>$4</em>, in the little brick building behind the Circle K.</h1>
+      <p class="lede">Authentic Mexican food on McFarland Boulevard since 2017. Street tacos, Bistec a la Mexicana, and a special that changes every day.</p>
+      <div class="cta">
+        <a class="btn main" href="tel:+12053314226">Call (205) 331-4226</a>
+        <a class="btn alt" href="https://www.google.com/maps/search/?api=1&amp;query=623+Hargrove+Rd+E+Tuscaloosa+AL+35401">Get directions</a>
+      </div>
+    </div>
+    <div class="find">
+      <p class="k">Find us</p>
+      <p class="big">623 Hargrove Rd E<br>Tuscaloosa, AL 35401</p>
+      <p class="k">Open from 11 AM</p>
+      <p class="big">To 10 PM Mon to Thu<br>To 11 PM Fri and Sat</p>
+    </div>
+  </div>
+  <div class="hero-foot" aria-hidden="true"></div>
+</header>
+
+<main>
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <h2>22 dishes on the menu, plus the daily special</h2>
+      <p>A few to start with. Vegetarian options are on the menu too.</p>
+    </div>
+
+    <div class="dish lead">
+      <h3>Bistec a la Mexicana</h3>
+      <div>
+        <p>The top of the entree list. Nothing on the menu costs more than $16.</p>
+      </div>
+    </div>
+
+    <div class="dish">
+      <div>
+        <h3>Lengua tacos</h3>
+        <span class="tag">$4 each</span>
+      </div>
+      <p>Beef tongue tacos at $4 apiece.</p>
+    </div>
+
+    <div class="dish">
+      <h3>Street tacos</h3>
+      <p>Made to order with your choice of meat.</p>
+    </div>
+
+    <div class="dish">
+      <h3>American-style tacos</h3>
+      <p>Flour tortilla, lettuce, sour cream and queso fresco.</p>
+    </div>
+
+    <div class="special">
+      <h3>The daily special rotates</h3>
+      <p>Call (205) 331-4226 to hear what is on today.</p>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>BuzzFeed named it <em>the best Latin food in Alabama</em> in 2019.</h2>
+    <div>
+      <p>The kitchen has been going since 2017 in a building with room for about 30 people. Students and neighbors know it as one of Tuscaloosa's hidden gems.</p>
+      <p><a href="https://thecrimsonwhite.com/127450/uncategorized/tuscaloosas-hidden-gem-antojitos-izcalli-serves-quality-community/">Read the Crimson White profile</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="ways">
+  <div class="wrap">
+    <div>
+      <h2>Sit down, carry out, or have it delivered</h2>
+      <p class="sub">The room is small, so a to-go order is often the quickest way in. Delivery runs through Crimson2Go.</p>
+      <a class="btn main" href="https://www.crimson2go.com/r/927/restaurants/delivery/Mexican/Antojitos-Izcalli-tuscaloosa">Order on Crimson2Go</a>
+    </div>
+    <ul>
+      <li><strong>Sit down</strong>About 30 seats, with high chairs and wheelchair access.</li>
+      <li><strong>Pick up</strong>Call (205) 331-4226 and carry it out.</li>
+      <li><strong>Delivered</strong>Crimson2Go brings it to your door.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div>
+      <h2>Hours</h2>
+      <table class="hours">
+        <tr><th scope="row">Monday to Thursday</th><td>11 AM to 10 PM</td></tr>
+        <tr><th scope="row">Friday and Saturday</th><td>11 AM to 11 PM</td></tr>
+      </table>
+    </div>
+    <div>
+      <h2>Where</h2>
+      <p class="addr">623 Hargrove Rd E<br>Tuscaloosa, AL 35401</p>
+      <p class="note">Look for the Circle K on McFarland Boulevard. The restaurant is the small brick building behind it.</p>
+      <ul class="facts">
+        <li>Cards accepted</li>
+        <li>Wheelchair accessible</li>
+        <li>High chairs available</li>
+      </ul>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=623+Hargrove+Rd+E+Tuscaloosa+AL+35401">Open in Maps</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong>Antojitos Izcalli</strong>
+      <p>623 Hargrove Rd E, Tuscaloosa, AL 35401</p>
+      <p><a href="tel:+12053314226">(205) 331-4226</a></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
